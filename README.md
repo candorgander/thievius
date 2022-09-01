@@ -1,6 +1,7 @@
 ## 💰🦝 thievius!
 <img src='https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kali-linux&logoColor=white'/> <img src='https://img.shields.io/badge/NeoVim-%2357A143.svg?&style=for-the-badge&logo=neovim&logoColor=white'/> <img src ='https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue'/> 
 
+- [⚠️ **disclaimer**](https://github.com/cr-0w/thievius#-disclaimer)
 - [💽 **download**](https://github.com/cr-0w/thievius#-installation)
 - [🎉 **usage**](https://github.com/cr-0w/thievius#-usage)
 - [🚧 **to-do**](https://github.com/cr-0w/thievius#-to-do)
@@ -11,6 +12,11 @@ Welcome back! I've created my second tool; a username generator called `thievius
 ![demo](https://github.com/cr-0w/thievius/blob/main/demo/demo.gif)
 
 This tool uses the amazing work of [Dzmitry Savitski](https://github.com/dzmitry-savitski)'s John the Ripper username generation [rules](https://dzmitry-savitski.github.io/2020/04/generate-a-user-name-list-for-brute-force-from-first-and-last-name). 
+
+## ⚡ Disclaimer! 
+This tool generates usernames from first and last names. Lord knows what you're going to end up doing with those usernames but this tool, and its author, do not condone the use of using `thievius!` for malicious and unauthorized activities against anything you do not have explicit permission to do so.
+- This is my second tool now, but I'm still far from being a "good" programmer so I'll try to update this script with more QoL-stuff and I'll try to fix any issues that may arise!
+
 
 ## ⭐ Installation
 To install the program, you can just download this repository and run the `install.sh` script.
