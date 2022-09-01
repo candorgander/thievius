@@ -32,7 +32,12 @@ chmod +x install.sh
 ## 🩸 Usage 
 For now, since I haven't implemented user-args, you can just run the script and enter in data one-by-one: 
 ```
-python thievius.py # or ./thievius.py
+python thievius.py 
+
+#or 
+
+chmod +x thievius.py
+./thievius.py
 ```
 > *Fret not, good friend. I'm currently working on parsing user arguments for the program to make this more efficient.*
 
