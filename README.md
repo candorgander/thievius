@@ -19,7 +19,7 @@ This tool generates usernames from first and last names. Lord knows what you're 
 
 
 ## ⭐ Installation
-To install the program, you can just download this repository and run the `install.sh` script.
+To install the program, you can just clone this repository and run the `install.sh` script.
 ```
 git clone https://github.com/cr-0w/thievius.git && cd thievius/
 python3 -m pip install -r requirements.txt
