@@ -39,8 +39,6 @@ python thievius.py
 chmod +x thievius.py
 ./thievius.py
 ```
-> *Fret not, good friend. I'm currently working on parsing user arguments for the program to make this more efficient.*
-
 ## 🚧 To-Do 
 - `add in support for user-supplied arguments`
 - `add in support to create emails by specifing a domain`
