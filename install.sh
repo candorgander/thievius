@@ -8,7 +8,7 @@ END="\e[0m"
 # check_root.exe
 if [[ $EUID -ne 0 ]]; then
   echo ''
-  echo -e '${RED} [X] please run this as root. ${END}'
+  echo -e "${RED} [X] please run this as root. ${END}"
   echo ''
   exit 1
 fi
