@@ -18,6 +18,7 @@ This tool uses the amazing work of [Dzmitry Savitski](https://github.com/dzmitry
 ## ⚡ Disclaimer! 
 This tool generates usernames from first and last names. Lord knows what you're going to end up doing with those usernames but this tool, and its author, do not condone the use of using `thievius!` for malicious and unauthorized activities against anything you do not have explicit permission to do so.
 - This is my second tool now, but I'm still far from being a "good" programmer so I'll try to update this script with more QoL-stuff and I'll try to fix any issues that may arise!
+- This tool is designed to run in a Kali Linux envrionment with john-jumbo setup. If you are running on a non-Kali system, please setup JTR accordingly.
 
 
 ## ⭐ Installation
@@ -41,8 +42,8 @@ chmod +x thievius.py
 ./thievius.py
 ```
 ## 🚧 To-Do 
-- `add in support for user-supplied arguments`
-- `add in support to create emails by specifing a domain`
+- [x] `add in support for user-supplied arguments`
+- [] `add in support to create emails by specifing a domain`
 
 ## 💖 Credits 
 A special thank you goes out to **Dzmitry Savitski** and his super cool blog post!

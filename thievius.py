@@ -65,6 +65,8 @@ def confirm_exception():
 
 # get name from user
 names = []
+# output filename
+out_file = "users.txt"
 
 
 def get_name():
@@ -149,7 +151,7 @@ def generate_usernames():
                 line_count = sum(1 for line in open('usernames.txt'))
                 print(info, 'thievius! has generated:' + Fore.LIGHTGREEN_EX,
                       '{}'.format(line_count), 'usernames' + Style.RESET_ALL + '!\n')
-                reorder = 'cat usernames.txt | sort > users.txt'
+                reorder = 'cat usernames.txt | sort > ' + out_file
                 os.system(reorder)
                 delete_temporary = 'rm names.txt usernames.txt'
                 os.system(delete_temporary)
@@ -163,9 +165,31 @@ def generate_usernames():
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(prog="thievius!",description="This tool generates usernames from first and last names")
+    parser.add_argument('-i',metavar="IN_FILE", help="Input a namelist file")
+    parser.add_argument('-o',metavar="OUT_FILE", default="users.txt", help="Output file name")
+    parser.add_argument("-l", metavar="\"FIRST LAST\"",nargs='+', help="Input a list of names as arguments. Use \"[First name] [Last name]\" to input full names ")
+    args = parser.parse_args()
     clear()
     banner()
-    get_name()
+    if args.o:
+        out_file = args.o
+    if args.i or args.l:
+        if args.i:
+            print(info, "Loading names from file")
+            try:
+                f = open(args.i)
+            except FileNotFoundError:
+                print(err, "Input file not found")
+                sys.exit(1)
+            for l in f:
+                names.append(l)
+
+        else:
+            print(info, "Loading names from arg list")
+            names = args.l
+    else:
+        get_name()
     display_names()
     export_names()
     generate_usernames()
