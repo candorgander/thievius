@@ -41,9 +41,22 @@ python thievius.py
 chmod +x thievius.py
 ./thievius.py
 ```
+
+```
+usage: thievius! [-h] [-i IN_FILE] [-o OUT_FILE] [-l "FIRST LAST" ["FIRST LAST" ...]]
+
+This tool generates usernames from first and last names
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -i IN_FILE            Input a namelist file
+  -o OUT_FILE           Output file name
+  -l "FIRST LAST" ["FIRST LAST" ...]
+                        Input a list of names as arguments. Use "[First name] [Last name]" to input full names
+```
 ## 🚧 To-Do 
 - [x] `add in support for user-supplied arguments`
-- [] `add in support to create emails by specifing a domain`
+- [ ] `add in support to create emails by specifing a domain`
 
 ## 💖 Credits 
 A special thank you goes out to **Dzmitry Savitski** and his super cool blog post!
